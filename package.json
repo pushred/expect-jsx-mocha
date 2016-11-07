@@ -1,0 +1,27 @@
+{
+  "name": "expect-jsx-mocha",
+  "scripts": {
+    "test": "mocha test.js --require babel-register",
+    "test:jsx": "mocha test.jsx --compilers jsx:babel-core/register"
+  },
+  "engines": {
+    "node": "6.5.0",
+    "npm": "3.10.3"
+  },
+  "babel": {
+    "presets": [
+      "react"
+    ]
+  },
+  "dependencies": {
+    "react": "^15.3.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "expect": "^1.20.2",
+    "expect-jsx": "^2.6.0",
+    "mocha": "^3.1.2"
+  }
+}
